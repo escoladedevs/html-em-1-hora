@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso HTML</title>
+    </head>
+    <body>
+        <h2>Contato</h2>
+        <p>Estamos aqui para ajudar</p>
+
+        <form action="https://httpbin.org/get" type="get">
+
+            <fieldset>
+                
+                <legend>Informações Pessoais</legend>
+            
+                <p>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="André">
+                </p>
+
+                <p>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Teste">
+                </p>
+
+                <p>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha">
+                </p>
+
+                <p>
+                    <label for="celular">Celular</label>
+                    <input type="tel" name="celular" id="celular" placeholder="(00) 00000-0000">
+                </p>
+
+                <p>
+                    <label for="decada">Década Favorita</label>
+                    <input type="number" name="decada" id="decada" min="1950" max="2020" step="10" value="1980">
+                </p>
+
+                <p>
+                    <label for="cafe">Café Favorito</label>
+                    <select name="cafe" id="cafe">
+                        <option value="normal">Café normal</option>
+                        <option value="expresso" selected>Café expresso</option>
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <br/>
+
+            <fieldset>
+                <legend>Qual sua comida favorita?</legend>
+
+                <input type="radio" name="comida" id="tacos" value="tacos">
+                <label for="tacos">Tacos</label>
+                <input type="radio" name="comida" id="pizza" value="pizza">
+                <label for="pizza">Pizza</label>
+                <input type="radio" name="comida" id="macarrao" value="macarrao">
+                <label for="macarrao">Macarrão</label>
+
+            </fieldset>
+
+            <br/>
+
+            <fieldset>
+                <legend>Você tem pets?</legend>
+
+                <input type="checkbox" name="cachorro" id="cachorro" value="cachorro">
+                <label for="cachorro">Cachorro</label>
+                <input type="checkbox" name="gato" id="gato" value="gato">
+                <label for="gato">Gato</label>
+                <input type="checkbox" name="peixe" id="peixe" value="peixe">
+                <label for="peixe">Peixe</label>
+
+            </fieldset>
+
+            <br/> 
+
+            <fieldset>
+                <legend>Mensagem</legend>
+                <label for="mensagem">Sua mensagem:</label>
+                <br/>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem aqui"></textarea>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
